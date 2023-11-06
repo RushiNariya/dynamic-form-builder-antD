@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('../fonts/Inter-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: medium;
+  font-weight: 500;
+  src: local(''), url('../fonts/Inter-Medium.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: semi-bold;
+  font-weight: 600;
+  src: local(''), url('../fonts/Inter-SemiBold.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: bold;
+  font-weight: 700;
+  src: local(''), url('../fonts/Inter-Bold.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: extra-bold;
+  font-weight: 800;
+  src: local(''), url('../fonts/Inter-ExtraBold.otf') format('otf');
+}

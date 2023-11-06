@@ -1,0 +1,30 @@
+.navbar-top {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.navbar_username {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+
+  color: #343a40;
+}
+
+.navbar_user_role {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  color: #74788d;
+}

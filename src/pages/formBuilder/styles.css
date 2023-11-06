@@ -1,0 +1,149 @@
+.body {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #aaa8a88f;
+  padding: 5px;
+}
+
+.sideBar_form {
+  flex: 0 0 1;
+  width: 250px;
+  padding: 0 10px;
+  border: 2px solid #b5aeae;
+  border-radius: 0.5rem;
+  height: calc(100vh - 5rem);
+  overflow-y: scroll;
+  /* background: #e1e1e1; */
+}
+
+.sideBarItem {
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  height: 50px;
+  padding: 10px;
+  margin-top: 10px;
+  background: #e8e4e469;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.page {
+  /* flex: 1 1 auto; */
+  padding: 0 20px;
+  /* margin: 20px; */
+
+  border: 2px solid #b5aeae;
+  border-radius: 0.5rem;
+  max-height: calc(100vh - 8.5rem);
+  overflow-y: scroll;
+}
+
+.dropZone {
+  flex: 0 0 auto;
+  height: 35px;
+  width: 100%;
+  transition: 200ms all;
+}
+
+.isLast,
+.isFirst {
+  height: 55px;
+}
+
+/* .dropZone:nth-of-type(2n) {
+  display: none;
+} */
+
+.dropZone.horizontalDrag {
+  width: 40px;
+  height: auto;
+}
+
+.dropZone:not(.horizontalDrag).isLast {
+  flex: 1 1 auto;
+}
+
+.dropZone.active,
+.trashDropZone.active {
+  background: #b9c0c4;
+  transition: 100ms all;
+}
+
+.component {
+  height: 60px;
+  padding: 10px;
+  background: #aaa;
+}
+
+.column {
+  border: 1px solid blue;
+  flex: 1 1 100%;
+  padding: 10px;
+}
+
+.columns {
+  display: flex;
+  padding: 20px 0;
+}
+
+.columnContainer {
+  display: flex;
+}
+
+.base {
+  padding: 1rem 0.5rem;
+  background-color: white;
+  cursor: move;
+}
+
+.row {
+  border: 1px solid rgb(161, 158, 158);
+  border-radius: 0.5rem;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trashDropZone {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border: 1px solid purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageContainer {
+  display: flex;
+  flex: 1;
+  padding-left: 0.5rem;
+  flex-direction: column;
+  /* margin-bottom: 100px; */
+}
+
+.icon {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+*::-webkit-scrollbar {
+  width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #eee6e6;
+  border-radius: 100px;
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #6b696854;
+  border-radius: 100px;
+}
